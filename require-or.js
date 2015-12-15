@@ -7,6 +7,9 @@ function requireOrFactory (require) {
             return require(id);
         } catch (e) {
             var result;
+            if (e.code !== 'MODULE_NOT_FOUND') {
+                throw e;
+            }
             if (callback) {
                 result = callback();
             }

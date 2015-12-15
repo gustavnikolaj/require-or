@@ -45,6 +45,18 @@ describe('require, or...', function () {
 
             return expect(requireOr('some-module'), 'to equal', someModule).finally(undoMock);
         });
+        it('should not catch non module errors', function () {
+            return expect(function () {
+                requireOr('./fixtures/module-with-error');
+            }, 'to throw', 'string is not a function');
+        });
+        it('should not catch non module errors', function () {
+            return expect(function () {
+                requireOr('./fixtures/module-with-error', function () {
+                    throw new Error('Callback was called');
+                });
+            }, 'to throw', 'string is not a function');
+        });
     });
     describe('without require passed', function () {
         var requireOr = requireOrFactory;
