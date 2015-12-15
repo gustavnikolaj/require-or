@@ -1,0 +1,32 @@
+{
+  "name": "require-or",
+  "version": "0.0.0",
+  "description": "require, or...",
+  "main": "require-or.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "2.3.4",
+    "onelint": "0.0.7",
+    "unexpected": "10.4.0"
+  },
+  "scripts": {
+    "test": "mocha && onelint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavnikolaj/require-or.git"
+  },
+  "keywords": [
+    "require",
+    "try",
+    "optional"
+  ],
+  "author": "Gustav Nikolaj <gustavnikolaj@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavnikolaj/require-or/issues"
+  },
+  "homepage": "https://github.com/gustavnikolaj/require-or#readme"
+}
