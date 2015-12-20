@@ -14,6 +14,7 @@ try {
 ... into:
 
 ```js
+var requireOr = require('require-or');
 var someModule = requireOr('module-that-might-fail', function () {
     console.log('AARGH! Could not find someModule!');
 });
@@ -33,6 +34,16 @@ error message, you don't need to provide it:
 
 ```js
 var maybeSomeModule = requireOr('some-module');
+```
+
+If you want to use relative paths, you will need to pass in require. Otherwise
+the path will not be resolved correctly.
+
+```js
+var requireOr = require('require-or')(require);
+var maybeSomeModule = requireOr('../some-module', function () {
+    // ...
+});
 ```
 
 ## License
