@@ -46,6 +46,17 @@ var maybeSomeModule = requireOr('../some-module', function () {
 });
 ```
 
+## Why?
+
+There is multiple other modules trying to solve the same problem.
+
+- [optional](https://github.com/tony-o/node-optional)
+- [try-require](https://github.com/rragan/try-require)
+
+Both solve the problem of squelching errors, but it does not give you any
+improvements over vanilla require for the cases where you want to handle the
+fall back case.
+
 ## License
 
 This module is made public under the ISC License.
