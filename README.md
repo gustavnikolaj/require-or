@@ -34,3 +34,10 @@ error message, you don't need to provide it:
 ```js
 var maybeSomeModule = requireOr('some-module');
 ```
+
+## License
+
+This module is made public under the ISC License.
+
+See the [LICENSE](https://github.com/gustavnikolaj/require-or/blob/master/LICENSE)
+file for additional details.
