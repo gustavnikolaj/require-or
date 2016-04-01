@@ -36,11 +36,9 @@ error message, you don't need to provide it:
 var maybeSomeModule = requireOr('some-module');
 ```
 
-If you want to use relative paths, you will need to pass in require. Otherwise
-the path will not be resolved correctly.
+Relative paths works as well:
 
 ```js
-var requireOr = require('require-or')(require);
 var maybeSomeModule = requireOr('../some-module', function () {
     // ...
 });
