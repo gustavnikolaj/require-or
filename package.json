@@ -1,6 +1,6 @@
 {
   "name": "require-or",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "require, or...",
   "main": "require-or.js",
   "directories": {
