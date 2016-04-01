@@ -7,12 +7,14 @@
     "test": "test"
   },
   "devDependencies": {
+    "eslint": "2.5.3",
+    "eslint-config-onelint": "1.0.2",
     "mocha": "2.3.4",
-    "onelint": "0.0.7",
     "unexpected": "10.4.0"
   },
   "scripts": {
-    "test": "mocha && onelint"
+    "lint": "eslint .",
+    "test": "mocha && npm run lint"
   },
   "repository": {
     "type": "git",
