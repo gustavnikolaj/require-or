@@ -9,7 +9,7 @@ module.exports = function (id, callback) {
     }
     try {
         if (id.substr(0, 1) === '.') {
-          return require(path.resolve(parentDirname, id));
+            return require(path.resolve(parentDirname, id));
         }
         return parentRequire(id);
     } catch (e) {

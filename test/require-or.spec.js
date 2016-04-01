@@ -2,10 +2,10 @@ var expect = require('unexpected');
 var requireOr = require('../');
 
 
-function mockNodeModules (path) {
+function mockNodeModules(path) {
     process.env.NODE_PATH = path;
     require('module').Module._initPaths();
-    return function revertMockNodeModules () {
+    return function revertMockNodeModules() {
         process.env.NODE_PATH = undefined;
         require('module').Module._initPaths();
     };

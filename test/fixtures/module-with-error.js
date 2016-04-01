@@ -1,2 +1,2 @@
-var not_a_function = 'a string!';
-module.exports = not_a_function();
+var noFunction = 'a string!';
+module.exports = noFunction();
